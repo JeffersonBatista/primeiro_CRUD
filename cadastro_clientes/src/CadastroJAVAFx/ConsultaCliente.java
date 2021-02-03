@@ -28,7 +28,7 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         nomeCliente = new javax.swing.JLabel();
-        lblNomeCliente = new javax.swing.JTextField();
+        lblConsultaNomeCliente = new javax.swing.JTextField();
         btnPesquisarCliente = new javax.swing.JButton();
         btnNovoCliente = new javax.swing.JButton();
         btnAlterarCliente = new javax.swing.JButton();
@@ -43,11 +43,13 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
         setTitle("Consultar Cliente");
         setPreferredSize(new java.awt.Dimension(600, 300));
 
+        nomeCliente.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        nomeCliente.setForeground(new java.awt.Color(204, 0, 0));
         nomeCliente.setText("NOME:");
 
-        lblNomeCliente.addActionListener(new java.awt.event.ActionListener() {
+        lblConsultaNomeCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lblNomeClienteActionPerformed(evt);
+                lblConsultaNomeClienteActionPerformed(evt);
             }
         });
 
@@ -72,7 +74,7 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
                         .addGap(8, 8, 8)
                         .addComponent(nomeCliente)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblNomeCliente))
+                        .addComponent(lblConsultaNomeCliente))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnPesquisarCliente)
                         .addGap(18, 18, 18)
@@ -91,7 +93,7 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNomeCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblConsultaNomeCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nomeCliente))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -106,9 +108,9 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void lblNomeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblNomeClienteActionPerformed
+    private void lblConsultaNomeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblConsultaNomeClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_lblNomeClienteActionPerformed
+    }//GEN-LAST:event_lblConsultaNomeClienteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -117,7 +119,7 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnExcluirCliente;
     private javax.swing.JButton btnNovoCliente;
     private javax.swing.JButton btnPesquisarCliente;
-    private javax.swing.JTextField lblNomeCliente;
+    private javax.swing.JTextField lblConsultaNomeCliente;
     private javax.swing.JLabel nomeCliente;
     // End of variables declaration//GEN-END:variables
 }

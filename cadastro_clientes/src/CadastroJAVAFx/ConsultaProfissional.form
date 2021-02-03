@@ -39,7 +39,7 @@
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Component id="nomeProfissional" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="lblNome" max="32767" attributes="0"/>
+                      <Component id="lblConsultaNomeProfissional" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="btnPesquisarProfissional" min="-2" max="-2" attributes="0"/>
@@ -63,7 +63,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblConsultaNomeProfissional" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="nomeProfissional" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -82,12 +82,18 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="nomeProfissional">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="cc" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="NOME:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="lblNome">
+    <Component class="javax.swing.JTextField" name="lblConsultaNomeProfissional">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lblNomeActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lblConsultaNomeProfissionalActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnPesquisarProfissional">

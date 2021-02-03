@@ -28,7 +28,7 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         nomeProfissional = new javax.swing.JLabel();
-        lblNome = new javax.swing.JTextField();
+        lblConsultaNomeProfissional = new javax.swing.JTextField();
         btnPesquisarProfissional = new javax.swing.JButton();
         btnNovoProfissional = new javax.swing.JButton();
         btnAlterarProfissional = new javax.swing.JButton();
@@ -43,11 +43,13 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
         setTitle("Consultar Profissional");
         setPreferredSize(new java.awt.Dimension(600, 300));
 
+        nomeProfissional.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        nomeProfissional.setForeground(new java.awt.Color(204, 0, 0));
         nomeProfissional.setText("NOME:");
 
-        lblNome.addActionListener(new java.awt.event.ActionListener() {
+        lblConsultaNomeProfissional.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lblNomeActionPerformed(evt);
+                lblConsultaNomeProfissionalActionPerformed(evt);
             }
         });
 
@@ -72,7 +74,7 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
                         .addGap(8, 8, 8)
                         .addComponent(nomeProfissional)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblNome))
+                        .addComponent(lblConsultaNomeProfissional))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnPesquisarProfissional)
                         .addGap(18, 18, 18)
@@ -91,7 +93,7 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblConsultaNomeProfissional, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nomeProfissional))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -106,9 +108,9 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void lblNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblNomeActionPerformed
+    private void lblConsultaNomeProfissionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblConsultaNomeProfissionalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_lblNomeActionPerformed
+    }//GEN-LAST:event_lblConsultaNomeProfissionalActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -117,7 +119,7 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnExcluirProfissional;
     private javax.swing.JButton btnNovoProfissional;
     private javax.swing.JButton btnPesquisarProfissional;
-    private javax.swing.JTextField lblNome;
+    private javax.swing.JTextField lblConsultaNomeProfissional;
     private javax.swing.JLabel nomeProfissional;
     // End of variables declaration//GEN-END:variables
 }
