@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cadastro_clientes;
+package CadastroJAVAFx;
 
 /**
  *
  * @author jeffe
  */
-public class ConsultaProfissional extends javax.swing.JInternalFrame {
+public class DicasRapidas extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form ConsultarProfissional
+     * Creates new form DicasRapidas
      */
-    public ConsultaProfissional() {
+    public DicasRapidas() {
         initComponents();
     }
 
@@ -27,11 +27,13 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Consulta Profissional");
+        setTitle("Dicas Rápidas");
+        setPreferredSize(new java.awt.Dimension(600, 300));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

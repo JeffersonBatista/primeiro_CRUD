@@ -1,4 +1,4 @@
-package cadastro_clientes;
+package CadastroJAVAFx;
 
 /**
  *

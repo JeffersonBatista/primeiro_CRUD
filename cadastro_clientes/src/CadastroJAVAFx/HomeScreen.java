@@ -1,4 +1,4 @@
-package cadastro_clientes;
+package CadastroJAVAFx;
 
 /**
  *
@@ -33,18 +33,21 @@ public class HomeScreen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jDesktopPane1.setPreferredSize(new java.awt.Dimension(450, 280));
+        jDesktopPane1.setPreferredSize(new java.awt.Dimension(600, 300));
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 302, Short.MAX_VALUE)
         );
+
+        jMenuBar1.setBorder(null);
+        jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         mCadastro.setText("Cadastro");
 
@@ -69,6 +72,11 @@ public class HomeScreen extends javax.swing.JFrame {
         mAjuda.setText("Ajuda");
 
         smDicasRapidas.setText("Dicas Rápidas");
+        smDicasRapidas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smDicasRapidasActionPerformed(evt);
+            }
+        });
         mAjuda.add(smDicasRapidas);
 
         smFaleConosco.setText("Fale Conosco");
@@ -91,14 +99,16 @@ public class HomeScreen extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void smFaleConoscoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smFaleConoscoActionPerformed
-        // TODO add your handling code here:
+        FaleConosco faleConosco = new FaleConosco();
+        this.jDesktopPane1.add(faleConosco);
+        faleConosco.setVisible(true);
     }//GEN-LAST:event_smFaleConoscoActionPerformed
 
     private void smClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smClientesActionPerformed
@@ -112,6 +122,12 @@ public class HomeScreen extends javax.swing.JFrame {
         this.jDesktopPane1.add(consultaProfissional);
         consultaProfissional.setVisible(true);
     }//GEN-LAST:event_smProfissionaisActionPerformed
+
+    private void smDicasRapidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smDicasRapidasActionPerformed
+        DicasRapidas dicasRapidas = new DicasRapidas();
+        this.jDesktopPane1.add(dicasRapidas);
+        dicasRapidas.setVisible(true);
+    }//GEN-LAST:event_smDicasRapidasActionPerformed
 
     /**
      * @param args the command line arguments
