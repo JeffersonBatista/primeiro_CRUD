@@ -40,7 +40,7 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Consulta Profissional");
+        setTitle("Consultar Profissional");
         setPreferredSize(new java.awt.Dimension(600, 300));
 
         nomeProfissional.setText("NOME:");
