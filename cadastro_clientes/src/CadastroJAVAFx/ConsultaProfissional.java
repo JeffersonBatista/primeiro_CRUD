@@ -14,8 +14,10 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
     /**
      * Creates new form ConsultarProfissional
      */
+    
     public ConsultaProfissional() {
         initComponents();
+        
     }
 
     /**

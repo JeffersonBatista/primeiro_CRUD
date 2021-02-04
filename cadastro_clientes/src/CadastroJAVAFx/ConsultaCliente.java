@@ -16,10 +16,10 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
     /**
      * Creates new form ConsultaCliente
      */
-    private JDesktopPane jdpPrincipal;
-    public ConsultaCliente(JDesktopPane jdp) {
+    private JDesktopPane jdpPrincipalc;
+    public ConsultaCliente(JDesktopPane jdpc) {
         initComponents();
-        jdpPrincipal = jdp;
+        jdpPrincipalc = jdpc;
     }
   
     /**
