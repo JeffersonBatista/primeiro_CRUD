@@ -5,6 +5,8 @@
  */
 package CadastroJAVAFx;
 
+import javax.swing.JDesktopPane;
+
 /**
  *
  * @author jefferson_B
@@ -14,9 +16,10 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
     /**
      * Creates new form ConsultaCliente
      */
-    
-    public ConsultaCliente() {
+    private JDesktopPane jdpPrincipal;
+    public ConsultaCliente(JDesktopPane jdp) {
         initComponents();
+        jdpPrincipal = jdp;
     }
 
     /**
@@ -42,7 +45,7 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Consulta Cliente");
+        setTitle("Consultar Cliente");
 
         nomeCliente.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         nomeCliente.setForeground(new java.awt.Color(204, 0, 0));

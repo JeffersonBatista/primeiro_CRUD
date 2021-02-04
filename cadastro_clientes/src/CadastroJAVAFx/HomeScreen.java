@@ -117,7 +117,7 @@ public class HomeScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_smFaleConoscoActionPerformed
 
     private void smClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smClientesActionPerformed
-        ConsultaCliente consultaCliente = new ConsultaCliente();
+        ConsultaCliente consultaCliente = new ConsultaCliente(jdpPrincipal);
         this.jdpPrincipal.add(consultaCliente);
         consultaCliente.setVisible(true);
     }//GEN-LAST:event_smClientesActionPerformed
