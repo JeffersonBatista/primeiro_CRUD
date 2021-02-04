@@ -50,6 +50,11 @@ public class HomeScreen extends javax.swing.JFrame {
         jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         mCadastro.setText("Cadastro");
+        mCadastro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mCadastroActionPerformed(evt);
+            }
+        });
 
         smClientes.setText("Clientes");
         smClientes.addActionListener(new java.awt.event.ActionListener() {
@@ -112,9 +117,9 @@ public class HomeScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_smFaleConoscoActionPerformed
 
     private void smClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smClientesActionPerformed
-       ConsultaCliente consultaCliente = new ConsultaCliente(jdpPrincipal);
-       this.jdpPrincipal.add(consultaCliente);
-       consultaCliente.setVisible(true);
+        ConsultaCliente consultaCliente = new ConsultaCliente();
+        this.jdpPrincipal.add(consultaCliente);
+        consultaCliente.setVisible(true);
     }//GEN-LAST:event_smClientesActionPerformed
 
     private void smProfissionaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smProfissionaisActionPerformed
@@ -128,6 +133,10 @@ public class HomeScreen extends javax.swing.JFrame {
         this.jdpPrincipal.add(dicasRapidas);
         dicasRapidas.setVisible(true);
     }//GEN-LAST:event_smDicasRapidasActionPerformed
+
+    private void mCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mCadastroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mCadastroActionPerformed
 
     /**
      * @param args the command line arguments

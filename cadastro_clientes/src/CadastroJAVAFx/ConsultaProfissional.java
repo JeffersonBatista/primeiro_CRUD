@@ -36,6 +36,8 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
         btnAlterarProfissional = new javax.swing.JButton();
         btnExcluirProfissional = new javax.swing.JButton();
         btnCancelarProfissional = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        TableProfissional = new javax.swing.JTable();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setClosable(true);
@@ -65,6 +67,27 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
 
         btnCancelarProfissional.setText("Cancelar");
 
+        TableProfissional.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Nome", "DDD", "Telefone", "E-mail", "CPF", "RG", "Nascimento"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(TableProfissional);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,7 +110,8 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
                         .addComponent(btnExcluirProfissional)
                         .addGap(18, 18, 18)
                         .addComponent(btnCancelarProfissional)
-                        .addGap(0, 153, Short.MAX_VALUE)))
+                        .addGap(0, 153, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -104,7 +128,9 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
                     .addComponent(btnAlterarProfissional)
                     .addComponent(btnExcluirProfissional)
                     .addComponent(btnCancelarProfissional))
-                .addContainerGap(198, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         pack();
@@ -116,11 +142,13 @@ public class ConsultaProfissional extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable TableProfissional;
     private javax.swing.JButton btnAlterarProfissional;
     private javax.swing.JButton btnCancelarProfissional;
     private javax.swing.JButton btnExcluirProfissional;
     private javax.swing.JButton btnNovoProfissional;
     private javax.swing.JButton btnPesquisarProfissional;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField lblConsultaNomeProfissional;
     private javax.swing.JLabel nomeProfissional;
     // End of variables declaration//GEN-END:variables
