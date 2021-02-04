@@ -22,7 +22,7 @@ public class HomeScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        jdpPrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         mCadastro = new javax.swing.JMenu();
         smClientes = new javax.swing.JMenuItem();
@@ -33,16 +33,16 @@ public class HomeScreen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jDesktopPane1.setPreferredSize(new java.awt.Dimension(600, 300));
+        jdpPrincipal.setPreferredSize(new java.awt.Dimension(600, 300));
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jdpPrincipalLayout = new javax.swing.GroupLayout(jdpPrincipal);
+        jdpPrincipal.setLayout(jdpPrincipalLayout);
+        jdpPrincipalLayout.setHorizontalGroup(
+            jdpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 600, Short.MAX_VALUE)
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jdpPrincipalLayout.setVerticalGroup(
+            jdpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 302, Short.MAX_VALUE)
         );
 
@@ -95,11 +95,11 @@ public class HomeScreen extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jdpPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)
+            .addComponent(jdpPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)
         );
 
         pack();
@@ -107,25 +107,25 @@ public class HomeScreen extends javax.swing.JFrame {
 
     private void smFaleConoscoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smFaleConoscoActionPerformed
         FaleConosco faleConosco = new FaleConosco();
-        this.jDesktopPane1.add(faleConosco);
+        this.jdpPrincipal.add(faleConosco);
         faleConosco.setVisible(true);
     }//GEN-LAST:event_smFaleConoscoActionPerformed
 
     private void smClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smClientesActionPerformed
-        ConsultaCliente consultaCliente = new ConsultaCliente();
-        this.jDesktopPane1.add(consultaCliente);
-        consultaCliente.setVisible(true);
+       ConsultaCliente consultaCliente = new ConsultaCliente(jdpPrincipal);
+       this.jdpPrincipal.add(consultaCliente);
+       consultaCliente.setVisible(true);
     }//GEN-LAST:event_smClientesActionPerformed
 
     private void smProfissionaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smProfissionaisActionPerformed
         ConsultaProfissional consultaProfissional = new ConsultaProfissional();
-        this.jDesktopPane1.add(consultaProfissional);
+        this.jdpPrincipal.add(consultaProfissional);
         consultaProfissional.setVisible(true);
     }//GEN-LAST:event_smProfissionaisActionPerformed
 
     private void smDicasRapidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smDicasRapidasActionPerformed
         DicasRapidas dicasRapidas = new DicasRapidas();
-        this.jDesktopPane1.add(dicasRapidas);
+        this.jdpPrincipal.add(dicasRapidas);
         dicasRapidas.setVisible(true);
     }//GEN-LAST:event_smDicasRapidasActionPerformed
 
@@ -166,8 +166,8 @@ public class HomeScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JDesktopPane jdpPrincipal;
     private javax.swing.JMenu mAjuda;
     private javax.swing.JMenu mCadastro;
     private javax.swing.JMenuItem smClientes;

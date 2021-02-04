@@ -5,6 +5,8 @@
  */
 package CadastroJAVAFx;
 
+import javax.swing.JDesktopPane;
+
 /**
  *
  * @author jefferson_B
@@ -14,10 +16,12 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
     /**
      * Creates new form ConsultaCliente
      */
-    public ConsultaCliente() {
+    private JDesktopPane jdpPrincipal;
+    public ConsultaCliente(JDesktopPane jdp) {
         initComponents();
+        jdpPrincipal = jdp;
     }
-
+  
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -122,4 +126,5 @@ public class ConsultaCliente extends javax.swing.JInternalFrame {
     private javax.swing.JTextField lblConsultaNomeCliente;
     private javax.swing.JLabel nomeCliente;
     // End of variables declaration//GEN-END:variables
+ 
 }
